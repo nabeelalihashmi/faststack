@@ -10,7 +10,7 @@
 |  W | MongoDB
 
 ### Why W stands for MongoDB?
-Because W fits here properly. W is basically M with left up in the air.
+Because W fits here properly. W is basically M with legs up in the air.
 
 ### Why Node?
 You can use  PHP if you have issue with Node.
