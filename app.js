@@ -7,6 +7,11 @@ module.exports = async function (fastify, opts) {
 
   fastify.logger = true;
   // Place here your custom code!
+  // This load fastify poly toly svelte
+  fastify.register(require('fastify-static'), {
+    root: path.join(__dirname, 'public'),
+    // prefix: '/public/', // optional: default '/'
+  })
 
   // Do not touch the following lines
 
@@ -25,24 +30,20 @@ module.exports = async function (fastify, opts) {
     options: Object.assign({}, opts)
   })
 
-  // This load fastify poly toly svelte
-  fastify.register(require('fastify-static'), {
-    root: path.join(__dirname, 'public'),
-    // prefix: '/public/', // optional: default '/'
-  })
+
 
   // This is to use pen di siri mongoose
   const uri = process.env.MONGO_URI || null;
   if (uri != null) {
-      const mongoose = require('mongoose');
-      try {
-        await mongoose.connect(uri)
-        console.log('mongodb connected')
-    } catch(error) {
+    const mongoose = require('mongoose');
+    try {
+      await mongoose.connect(uri)
+      console.log('mongodb connected')
+    } catch (error) {
       console.log(error);
     }
 
   }
-  
+
 }
 

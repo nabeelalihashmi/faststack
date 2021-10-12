@@ -1,6 +1,6 @@
 # NSFW FastStack
 
-## What does it stands for?
+### What does it stands for?
 
 |  Letter | Technology|
 |----|-----|
@@ -9,24 +9,56 @@
 |  F | Fastify|
 |  W | MongoDB
 
-## Why W stands for MongoDB?
+### Why W stands for MongoDB?
 Because W fits here properly. W is basically M with left up in the air.
 
-## Why Node?
+### Why Node?
 You can use  PHP if you have issue with Node.
 
-## Why Svelte?
+### Why Svelte?
 It is faster than Vue and React. And one of the easiest.
 
-## Why Fastify?
+### Why Fastify?
 It is faster than Express.
 
-## Why MongoDB?
+### Why MongoDB?
 It is good.
+
+
+---------------
+# Run
+
+In root folder:
+```
+yarn dev
+yarn start 
+```
+
+In _frontend folder:
+```
+yarn dev
+yarn build
+```
+
+output of svelte is in public/build folder
+
+# Routes
+
+```
+app/routes
+```
+
+http://localhost:3000/api/person/list
+
+http://localhost:3000/api/person/list/id
+
+http://localhost:3000/api/person/add/name/cnic
 
 ---------------
 
-## Routes Folder
+## Docs from Routes Folder
+
+Prefix 'app' where routes is written.
 
 Routes define routes within your application. Fastify provides an
 easy path to a microservice architecture, in the future you might want
