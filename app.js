@@ -6,6 +6,8 @@ const AutoLoad = require('fastify-autoload')
 module.exports = async function (fastify, opts) {
 
   fastify.logger = true;
+
+  
   // Place here your custom code!
   // This load fastify poly toly svelte
   fastify.register(require('fastify-static'), {

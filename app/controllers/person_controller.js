@@ -9,6 +9,16 @@ const addPerson = async (request, reply) => {
    p = await newPerson.save(); 
    return p;
 }
+
+const addRealPerson = async (request, reply) => {
+   const newPerson = new Person({
+      name: request.body.name, 
+      cnic: request.body.cnic, 
+   });
+
+   p = await newPerson.save(); 
+   return  {p};
+}
 const getPersonById = async (request, reply) => {
    const person = await Person.find({ _id: request.params.id });
    return person;
@@ -21,5 +31,6 @@ const getAllPersons = async (request, reply) => {
 module.exports = { 
    addPerson,
    getPersonById,
-   getAllPersons
+   getAllPersons,
+   addRealPerson
 }

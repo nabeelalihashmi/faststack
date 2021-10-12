@@ -23,6 +23,18 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
+"@easyroute/core@2.0.0-alpha.3":
+  version "2.0.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/@easyroute/core/-/core-2.0.0-alpha.3.tgz#84694367cd8914c1de8c7209a02281fef327c11c"
+  integrity sha512-J5OOHjO3KkoogI492FX2fatkCD9Hp4joCK6AXp/D01lBbGyUaFX+xqarhUy03SQ6BbjXg0g937uHbic0stj5NA==
+
+"@easyroute/svelte@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@easyroute/svelte/-/svelte-3.2.0.tgz#2640d2d25a9fec45efa97052aa0b5d10eff77ec8"
+  integrity sha512-BGL20bVWgrn/hnTTaAbKwR9M2McrGRAy3l8eInbD33XIjcug1uecSk72sfwKte35ms5n8jyrrBUowUOiKxAk1Q==
+  dependencies:
+    "@easyroute/core" "2.0.0-alpha.3"
+
 "@polka/url@^1.0.0-next.20":
   version "1.0.0-next.21"
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"

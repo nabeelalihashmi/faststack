@@ -14,6 +14,11 @@ module.exports = async function (fastify, opts) {
     return res;
   })
 
+  fastify.post('/add', async function (request, reply) {
+    res = await personController.addRealPerson(request, reply);
+    return res;
+  })
+
   fastify.get('/list/:id', async function (request, reply) {
     res = await personController.getPersonById(request, reply);
     return res;
