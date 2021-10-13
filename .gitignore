@@ -60,3 +60,5 @@ profile*
 
 .env
 /_frontend/node_modules
+
+README.md.bak

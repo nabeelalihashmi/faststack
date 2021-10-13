@@ -1,16 +1,14 @@
-# NSFW FastStack
+# FastStack
 
 ### What does it stands for?
 
 |  Letter | Technology|
 |----|-----|
-|  N | Node|
-|  S | Svelte|
+|  M | MongoDB
 |  F | Fastify|
-|  W | MongoDB
+|  S | Svelte|
+|  N | Node|
 
-### Why W stands for MongoDB?
-Because W fits here properly. W is basically M with legs up in the air.
 
 ### Why Node?
 You can use  PHP if you have issue with Node.
@@ -26,6 +24,8 @@ It is good.
 
 
 ---------------
+# Configure ENV
+
 # Run
 
 In root folder:

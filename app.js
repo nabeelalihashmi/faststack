@@ -2,6 +2,7 @@
 
 const path = require('path')
 const AutoLoad = require('fastify-autoload')
+const choopa_config = require('./config')
 
 
 const fastify = require('fastify')({logger: true});
@@ -24,12 +25,12 @@ fastify.register(AutoLoad, {
 // This is to use pen di siri mongoose
 
 async function StartMongo() {
-  const uri = process.env.MONGO_URI || null;
+  const uri = choopa_config.MONGO_URI || null;
   if (uri != null) {
     const mongoose = require('mongoose');
     try {
       await mongoose.connect(uri)
-      console.log('Mongodb Connected')
+      console.log('Mongodb Connected' )
     } catch (error) {
       console.log(error);
     }
@@ -38,13 +39,14 @@ async function StartMongo() {
 
 async function StartFastify() {
   try {
-    const port = process.env.PORT || 3000
+    const port = choopa_config.PORT || 3000
     await fastify.listen(port, () => {console.log('Server Started')})
   } catch (error) {
     console.log('error: ', error)
     process.exit(1)
   }
 }
+
 
 StartFastify();
 StartMongo();
