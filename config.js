@@ -1,5 +1,5 @@
 const choopa_config = {
-    MONGO_URI:"mongodb+srv://user:password@cluster0.gn2ro.mongodb.net/pinkeshwerdb",
+    MONGO_URI:"",
     PORT:3000
 }
 
