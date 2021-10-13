@@ -8,8 +8,11 @@
   },
   "scripts": {
     "test": "tap \"test/**/*.test.js\"",
-    "start": "fastify start -l info app.js",
-    "dev": "fastify start -w -l info -P app.js"
+    "dev": "nodemon app.js",
+    "start": "node app.js",
+    
+    "fastify:start": "fastify start -l info app.js",
+    "fastify:dev": "fastify start -w -l info -P app.js"
   },
   "keywords": [],
   "author": "Nabeel Ali <mail2nabeelali@gmail.com>",

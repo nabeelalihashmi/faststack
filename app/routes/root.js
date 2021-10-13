@@ -15,4 +15,8 @@ module.exports = async function (fastify, opts) {
   fastify.get('/add_person', async function (request, reply) {
     return reply.sendFile('index.html');
   })
+  fastify.get('/test', async function(request, reply) {
+    reply.type('text/html')
+    reply.send('Hello, World');
+  });
 }
